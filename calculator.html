@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 
+      <!-- jQuery --> 
+      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -102,21 +104,27 @@
   </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
           
-    <select id="mySelect" onchange="myFunction()">
-      <option value="Audi">Audi</option>
-      <option value="BMW">BMW</option>
-      <option value="Mercedes">Mercedes</option>
-      <option value="Volvo">Volvo</option>
-    </select>
+<label for="chkPassport">
+    <input type="checkbox" id="chkPassport" />
+    Do you have Passport?
+</label>
+<hr />
+<div id="dvPassport" style="display: none">
+    Passport Number:
+    <input type="text" id="txtPassportNumber" />
+</div>
+<!--
+<div id="AddPassport">
+    Add New Password
+</div>
+-->
           
           
 </form>
 
 <script>
-    
+
    
-    
-    
     function myFunction_i1() {
         var i1 = document.getElementById("i1").value;
         console.log(i1);
@@ -130,8 +138,23 @@
         console.log(ro2);
         document.getElementById("ro2").value = ro2;
     }
+    
+    $(function () {
+        $("#chkPassport").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").show();
+//                $("#AddPassport").hide();
+            } else {
+                $("#txtPassportNumber").val("");
+                $("#dvPassport").hide();
+//                $("#AddPassport").show();
+            }
+        });
+    });
 
-    </script>
+    
+    
+</script>
 
     
     
