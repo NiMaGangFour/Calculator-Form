@@ -1,7 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<!DOCTYPE html>
+<html>
+<head>
+
+        <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,152 +12,11 @@
       <!-- jQuery --> 
       <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <title>Hello, world!</title>
-  </head>
-  <body>
-  
-      
-      <form class="needs-validation" novalidate>
-  <div class="form-row">
-      
-    <div class="col-md-4 mb-3">
-      <label for="i1">Var 01</label>
-      <input type="text" class="form-control" id="i1" placeholder="i1" onchange="myFunction_i1()" required>
-      <div class="valid-feedback">
-        valided
-      </div>
-    </div>
-      
-    <div class="col-md-4 mb-3">
-      <label for="i2">Var 02</label>
-      <input type="text" class="form-control" id="i2" placeholder="i2" onchange="myFunction_i2()" required>
-      <div class="valid-feedback">
-        valided
-      </div>
-    </div>
-      
-    <div class="col-md-4 mb-3">
-      <label for="ro1">Result 1</label>
-      <input id="ro1" class="form-control" type="text" placeholder="Readonly input here..." readonly>
-    </div>
-      
-       <div class="col-md-4 mb-3">
-      <label for="ro2">Result 2</label>
-      <input id="ro2" class="form-control" type="text" placeholder="Readonly input here..." readonly>
-    </div>
-      
-      
-      <div class="col-md-4 mb-3">
-      <label for="ro1">Result 1</label>
-      <input id="ro1" class="form-control" type="text" placeholder="Readonly input here..." readonly>
-    </div>
-      
-      <div class="col-md-4 mb-3">
-      <label for="ro1">Result 1</label>
-      <input id="ro1" class="form-control" type="text" placeholder="Readonly input here..." readonly>
-    </div>
-      
-      <div class="col-md-4 mb-3">
-      <label for="ro1">Result 1</label>
-      <input id="ro1" class="form-control" type="text" placeholder="Readonly input here..." readonly>
-    </div>
-      
-      <div class="col-md-4 mb-3">
-      <label for="ro1">Result 1</label>
-      <input id="ro1" class="form-control" type="text" placeholder="Readonly input here..." readonly>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom04">State</label>
-      <select class="custom-select" id="validationCustom04" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
-      <div class="invalid-feedback">
-        Please select a valid state.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom05">Zip</label>
-      <input type="text" class="form-control" id="validationCustom05" required>
-      <div class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        Agree to terms and conditions
-      </label>
-      <div class="invalid-feedback">
-        You must agree before submitting.
-      </div>
-    </div>
-  </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
-          
-<label for="chkPassport">
-    <input type="checkbox" id="chkPassport" />
-    Do you have Passport?
-</label>
-<hr />
-<div id="dvPassport" style="display: none">
-    Passport Number:
-    <input type="text" id="txtPassportNumber" />
-</div>
-<!--
-<div id="AddPassport">
-    Add New Password
-</div>
--->
-          
-          
-</form>
-
-<script>
-
-   
-    function myFunction_i1() {
-        var i1 = document.getElementById("i1").value;
-        console.log(i1);
-        document.getElementById("ro1").value = i1;
-    }
-    
-     function myFunction_i2() {
-        var i1 = document.getElementById("i1").value;
-        var i2 = document.getElementById("i2").value;
-        var ro2 = i1*i2
-        console.log(ro2);
-        document.getElementById("ro2").value = ro2;
-    }
-    
-    $(function () {
-        $("#chkPassport").click(function () {
-            if ($(this).is(":checked")) {
-                $("#dvPassport").show();
-//                $("#AddPassport").hide();
-            } else {
-                $("#txtPassportNumber").val("");
-                $("#dvPassport").hide();
-//                $("#AddPassport").show();
-            }
-        });
-    });
-
-    
-    
-</script>
-
-    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
     
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -178,10 +38,397 @@
       }, false);
     })();
     </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
-  </body>
+    
+    <script>
+    function myFunction_i1() {
+        var i1 = document.getElementById("i1").value;
+        console.log(i1);
+        document.getElementById("ro1").value = i1;
+    }
+    
+     function myFunction_i2() {
+        var i1 = document.getElementById("i1").value;
+        var i2 = document.getElementById("i2").value;
+        var ro2 = i1*i2
+        console.log(ro2);
+        document.getElementById("ro2").value = ro2;
+    }
+    
+    $(function () {
+        $("#pe-check-1").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-1").show();
+//                $("#AddPassport").hide();
+            } else {
+                $("#pe-hide-value-1").val("");
+                $("#pe-hide-1").hide();
+//                $("#AddPassport").show();
+            }
+        });
+        
+            $("#pe-check-2").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-2").show();
+//                $("#AddPassport").hide();
+            } else {
+                $("#pe-hide-value-2").val("");
+                $("#pe-hide-2").hide();
+//                $("#AddPassport").show();
+            }
+        });
+        
+          $("#ps-check-1").click(function () {
+            if ($(this).is(":checked")) {
+                $("#ps-hide-1").show();
+            } else {
+                $("#ps-hide-value-1").val("");
+                $("#ps-hide-value-2").val(""); 
+                $("#ps-hide-1").hide();
+            }
+        });
+        
+        
+        $("#ps-check-2").click(function () {
+            if ($(this).is(":checked")) {
+                $("#ps-hide-2").show();
+            } else {
+                $("#ps-hide-2-value-1").val("");
+                $("#ps-hide-2").hide();
+            }
+        });
+        
+        $("#ps-check-3").click(function () {
+            if ($(this).is(":checked")) {
+                $("#ps-hide-3").show();
+            } else {
+                $("#ps-hide-3-value-1").val("");
+                $("#ps-hide-3").hide();
+            }
+        });
+        
+        
+        
+    
+    
+    });
+        
+
+    
+    
+</script>
+
+</head>
+<body>
+    <h2>SHIPMENT CONFIGURATION</h2>
+    <h5>HOW ARE YOU EXPORTING TO CHINA?</h5>
+  <form class="needs-validation" novalidate>
+  <div class="form-row"> 
+    <!-- Import Options []-->  
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom04">Import Options<span style="color:red">*</span>
+        </label>
+        <select class="custom-select" id="validationCustom04" required>
+        <option>General Trade</option>
+        <option>Cross-Border E-Commerce</option>
+        </select>
+        <label style="font-size: 80%" for="i1">How are you importing products into China?</label>
+      </div>  
+      
+      <!-- Product Types []-->  
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom04">Product Types<span style="color:red">*</span>
+        </label>
+        <select class="custom-select" id="validationCustom04" required>
+        <option>Frozen</option>
+        <option>Chilled</option>
+        <option>Ambient</option>
+        </select>
+        <label style="font-size: 80%" for="i1">What type of products are you exporting?</label>
+      </div>      
+      
+      <!-- Export Modes []-->  
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom04">Export Modes<span style="color:red">*</span>
+        </label>
+        <select class="custom-select" id="validationCustom04" required>
+        <option>Air Freight (AKE)</option>
+        <option>Air Freight (PMC)</option>
+        <option>Sea Freight (20'FCL)</option>
+        <option>Sea Freight (40'FCL)</option>
+        </select>
+        <label style="font-size: 80%" for="i1">What method of transport are you using?</label>
+      </div>
+  </div>
+      
+<div class="form-row">
+    <div class="col-md-12 mb-3">
+      <label for="validationCustom04">Is your shipment palletised?<span style="color:red">*</span>
+        </label>
+        <select class="custom-select" id="validationCustom04" required>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+    </div>
+</div>
+      
+<div class="form-row">
+    <div class="col-md-4 mb-3">
+        <label for="validationCustom04">Number of Units Per Pallet<span style="color:red">*</span></label>
+        <div class="input-group">
+        <input type="number" class="form-control" placeholder="E.g. 10" required>
+        <div class="input-group-append">
+        <span class="input-group-text">units</span>
+        </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-3">
+        <label for="validationCustom04">Number of Pallets Per Container<span style="color:red">*</span></label>
+        <div class="input-group">
+        <input type="number" class="form-control" placeholder="E.g. 10" required>
+        <div class="input-group-append">
+        <span class="input-group-text">units</span>
+        </div>
+        </div>
+    </div>
+    
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom04">Number of Containers per Shippment<span style="color:red">*</span></label>
+        <div class="input-group">
+        <input type="number" class="form-control" placeholder="E.g. 10" required>
+        <div class="input-group-append">
+        <span class="input-group-text">units</span>
+        </div>
+        </div>
+    </div>
+    
+</div>
+      
+    <div class="form-row"> 
+        <div class="col-md-6 mb-3">
+        <label for="sc-ro1">Units per Container (Palletised)</label>
+        <input id="sc-ro1" class="form-control" type="text" placeholder="0" readonly>
+        </div>
+      
+        <div class="col-md-6 mb-3">
+        <label for="sc-ro2">Total Units</label>
+        <input id="sc-ro2" class="form-control" type="text" placeholder="0" readonly>
+        </div>
+
+    </div>
+  <h5>WEIGHT</h5>   
+  <div class="form-row"> 
+    <div class="col-md-12 mb-3">
+        <label for="validationCustom04">Weight Per Unit<span style="color:red">*</span></label>
+        <div class="input-group">
+        <input type="number" class="form-control" placeholder="E.g. 10kg" required>
+        <div class="input-group-append">
+        <span class="input-group-text">kilos</span>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 mb-3">
+        <label for="validationCustom04">Number of Units Per Pallet<span style="color:red">*</span></label>
+        <div class="input-group">
+        <input type="number" class="form-control" placeholder="E.g. 10kg" required>
+        <div class="input-group-append">
+        <span class="input-group-text">kilos</span>
+        </div>
+        </div>
+        <label style="font-size: 80%" for="i1">Per container; eg. pallets, cartons, etc</label>
+    </div>
+      
+        <div class="col-md-12 mb-3">
+        <label for="sc-ro3">Total Shipment Weight</label>
+        <input id="sc-ro3" class="form-control" type="text" placeholder="0" readonly>
+        </div>
+      
+</div>
+      <!----------------PRE EXPORT---------------->
+      
+      <h2>PRE EXPORT</h2>
+      <h5>BENCHMARK COSTS WITHIN THIS SECTION ARE ONE-OFF CHARGES.</h5>
+<div class="form-row">
+        <div class="col-md-12 mb-3">
+            <div>
+        <label for="pe-check-1">
+            <p>Product Ingredients and Processing Compliance</p>
+        <input type="checkbox" id="pe-check-1" />Include Product Ingredients and Processing Compliance
+      
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1">For General Trade import pathway, overseas manufacturers and exporters of food must be registered with CNCA if the product being exported is on the ‘List of Food Imports Subject to Enterprise Registration’. Some of the food products that have heightened safety requirements such as meat and health products require additional registration.</label>
+        </div>
+
+        <div class="col-md-12 mb-3" id="pe-hide-1" style="display: none">
+             <label for="validationCustom04">Product Ingredients and Processing Compliance Cost</label>
+            <div class="input-group">
+            <input id="pe-hide-value-1" type="number" class="form-control" placeholder="500">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify your own cost or use the benchmark of $500 AUD</label>
+            <div class="col-md-12 mb-3" style="font-size: 80%">
+                <label>
+                    References: Product Ingredients & Processing Compliance for General Trade
+                </label> 
+                <ul style="border:3px solid #999 ">
+                    <li>China Food Safety Law (2015)</li>
+                    <li>CNCA List of Food Imports Subject to Enterprise Registration</li>
+                    <li>Harmonised System (HS) codes</li>
+                    <li>Manual of Importing Country Requirements (MICoR)</li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+    
+    <div class="col-md-12 mb-3">
+            <div>
+        <label for="chkPassport">
+            <p>Label Design and Content Compliance</p>
+        <input type="checkbox" id="pe-check-2" />Include Label Design & Content Compliance
+      
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1">For General Trade import pathway, food products must meet China's food labelling requirements (refer relevant GB Standards).</label>
+        </div>
+    
+     <div class="col-md-12 mb-3" id="pe-hide-2" style="display: none">
+             <label for="validationCustom04">Product Ingredients and Processing Compliance Cost</label>
+            <div class="input-group">
+            <input id="pe-hide-value-2" type="number" class="form-control" placeholder="500">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify your own cost or use the benchmark of $500 AUD</label>
+            
+            <hr>
+        </div>
+</div>
+      
+      
+<!----------------PRE SHIPMENT---------------->
+
+<h2>PRE SHIPMENT</h2>
+<div class="form-row">
+    <div class="col-md-12 mb-3">
+            <div>
+        <label for="chkPassport">
+            <p>Label Printing and Application</p>
+        <input type="checkbox" id="ps-check-1" />Include Label Printing & Application
+      
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1">China compliant labels can be printed and applied at point of production or alternatively upon shipment arrival (as an overlay). The decision on which is the best option will depend on a number of factors such as shipment quantity and product label aesthetics.</label>
+        </div>
+    </div>
+    
+    <div class="form-row"  id="ps-hide-1" style="display: none"> 
+   
+     <div class="col-md-6 mb-3" >
+             <label for="validationCustom04">Label Printing & Application Cost<span style="color:red">*</span></label>
+            <div class="input-group">
+            <input id="ps-hide-value-1" type="number" class="form-control" placeholder="0.1">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify your own cost or use the benchmark of $0.1 AUD per unit</label>
+    </div>
+          <div class="col-md-6 mb-3" >
+             <label for="validationCustom04">LP&A Cost<span style="color:red">*</span></label>
+            <div class="input-group">
+            <input id="ps-hide-value-2" type="number" class="form-control" placeholder="0.8">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify your own cost or use the benchmark of $0.1 AUD per unit</label>
+            
+        </div> 
+    </div>
+      <hr>
+
+      
+  <div class="form-row">
+    <div class="col-md-12 mb-3">
+            <div>
+        <label for="chkPassport">
+            <p>Manufacturer's Declaration</p>
+        <input type="checkbox" id="ps-check-2" />Include Manufacturer's Declaration
+      
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1">A Manufacturer's Declaration must be submitted to DAWR to receive the Australian Health Certificate that must accompany the export of certain product categories (refer MICoR).</label>
+        </div>
+    </div>
+    
+    <div class="form-row"  id="ps-hide-2" style="display: none"> 
+    
+     <div class="col-md-12 mb-3" >
+             <label for="validationCustom04">Manufacturer's Declaration Cost</label>
+            <div class="input-group">
+            <input id="ps-hide-2-value-1" type="number" class="form-control" placeholder="20">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify your own cost or use the benchmark of $20 AUD</label>
+        </div>
+    </div>
+       <hr>
+      
+      
+       <div class="form-row">
+    <div class="col-md-12 mb-3">
+            <div>
+        <label for="chkPassport">
+            <p>Australian Certificate of Origin</p>
+        <input type="checkbox" id="ps-check-3" />Include Australian Certificate of Origin
+      
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1">Other Documentation (for example 'halal', 'organic' or 'award winning' claims).</label>
+        </div>
+    </div>
+    
+    <div class="form-row"  id="ps-hide-3" style="display: none"> 
+    
+     <div class="col-md-12 mb-3" >
+             <label for="validationCustom04">Australian Certificate of Origin Cost</label>
+            <div class="input-group">
+            <input id="ps-hide-3-value-1" type="number" class="form-control" placeholder="30">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify your own cost or use the benchmark of $30 AUD</label>
+        </div>
+    </div>
+       <hr>
+
+      
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+          
+
+          
+          
+</form>
+
+
+</body>
 </html>
