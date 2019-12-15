@@ -77,35 +77,126 @@
             }
         });
         
-          $("#ps-check-1").click(function () {
+          $("#pe-check-3").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-3").show();
+            } else {
+                $("#pe-hide-value-3.1").val("");
+                $("#pe-hide-value-3.2").val(""); 
+                $("#pe-hide-3").hide();
+            }
+        });
+        
+        
+        $("#pe-check-4").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-4").show();
+            } else {
+                $("#ps-hide-2-value-1").val("");
+                $("#pe-hide-4").hide();
+            }
+        });
+        
+        $("#pe-check-5").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-5").show();
+            } else {
+                $("#ps-hide-3-value-1").val("");
+                $("#pe-hide-5").hide();
+            }
+        });
+        
+           $("#pe-check-6").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-6").show();
+            } else {
+                $("#ps-hide-3-value-1").val("");
+                $("#pe-hide-6").hide();
+            }
+        });
+        
+           $("#pe-check-7").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-7").show();
+            } else {
+                $("#ps-hide-value-7.1").val("");
+                $("#pe-hide-7").hide();
+            }
+        });    
+        
+        $("#pe-check-8").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-8").show();
+            } else {
+                $("#ps-hide-value-8.1").val("");
+                $("#pe-hide-8").hide();
+            }
+        }); 
+        
+        $("#pe-check-9").click(function () {
+            if ($(this).is(":checked")) {
+                $("#pe-hide-9").show();
+            } else {
+                $("#ps-hide-value-9.1").val("");
+                $("#pe-hide-9").hide();
+            }
+        });
+        
+//    ------Pre Shipment ---------
+        
+        $("#ps-check-1").click(function () {
             if ($(this).is(":checked")) {
                 $("#ps-hide-1").show();
             } else {
-                $("#ps-hide-value-1").val("");
-                $("#ps-hide-value-2").val(""); 
+                $("#ps-hide-value-9.1").val("");
                 $("#ps-hide-1").hide();
             }
         });
         
-        
-        $("#ps-check-2").click(function () {
+         $("#ps-check-2").click(function () {
             if ($(this).is(":checked")) {
                 $("#ps-hide-2").show();
             } else {
-                $("#ps-hide-2-value-1").val("");
+                $("#ps-hide-value-9.1").val("");
                 $("#ps-hide-2").hide();
             }
         });
         
-        $("#ps-check-3").click(function () {
+         $("#ps-check-3").click(function () {
             if ($(this).is(":checked")) {
                 $("#ps-hide-3").show();
             } else {
-                $("#ps-hide-3-value-1").val("");
+                $("#ps-hide-value-9.1").val("");
                 $("#ps-hide-3").hide();
             }
         });
         
+         $("#ps-check-4").click(function () {
+            if ($(this).is(":checked")) {
+                $("#ps-hide-4").show();
+            } else {
+                $("#ps-hide-value-9.1").val("");
+                $("#ps-hide-4").hide();
+            }
+        });
+        
+         $("#ps-check-5").click(function () {
+            if ($(this).is(":checked")) {
+                $("#ps-hide-5").show();
+            } else {
+                $("#ps-hide-value-9.1").val("");
+                $("#ps-hide-5").hide();
+            }
+        });
+        
+         $("#ps-check-6").click(function () {
+            if ($(this).is(":checked")) {
+                $("#ps-hide-6").show();
+            } else {
+                $("#ps-hide-value-9.1").val("");
+                $("#ps-hide-6").hide();
+            }
+        });
         
         
     
@@ -310,15 +401,14 @@
 </div>
       
       
-<!----------------PRE SHIPMENT---------------->
+<!-------------------------------->
 
-<h2>PRE SHIPMENT</h2>
 <div class="form-row">
     <div class="col-md-12 mb-3">
             <div>
         <label for="chkPassport">
             <p>Label Printing and Application</p>
-        <input type="checkbox" id="ps-check-1" />Include Label Printing & Application
+        <input type="checkbox" id="pe-check-3" />Include Label Printing & Application
       
         </label>
             </div>
@@ -326,12 +416,12 @@
         </div>
     </div>
     
-    <div class="form-row"  id="ps-hide-1" style="display: none"> 
+    <div class="form-row"  id="pe-hide-3" style="display: none"> 
    
      <div class="col-md-6 mb-3" >
              <label for="validationCustom04">Label Printing & Application Cost<span style="color:red">*</span></label>
             <div class="input-group">
-            <input id="ps-hide-value-1" type="number" class="form-control" placeholder="0.1">
+            <input id="pe-hide-value-3.1" type="number" class="form-control" placeholder="0.1">
             <div class="input-group-append">
             <span class="input-group-text">AUD</span>
             </div>
@@ -341,12 +431,12 @@
           <div class="col-md-6 mb-3" >
              <label for="validationCustom04">LP&A Cost<span style="color:red">*</span></label>
             <div class="input-group">
-            <input id="ps-hide-value-2" type="number" class="form-control" placeholder="0.8">
+            <input id="pe-hide-value-3.2" type="number" class="form-control" placeholder="0.8">
             <div class="input-group-append">
             <span class="input-group-text">AUD</span>
             </div>
             </div>
-            <label style="font-size: 80%" for="i1">Specify your own cost or use the benchmark of $0.1 AUD per unit</label>
+            <label style="font-size: 80%" for="i1"></label>
             
         </div> 
     </div>
@@ -358,7 +448,7 @@
             <div>
         <label for="chkPassport">
             <p>Manufacturer's Declaration</p>
-        <input type="checkbox" id="ps-check-2" />Include Manufacturer's Declaration
+        <input type="checkbox" id="pe-check-4" />Include Manufacturer's Declaration
       
         </label>
             </div>
@@ -366,12 +456,11 @@
         </div>
     </div>
     
-    <div class="form-row"  id="ps-hide-2" style="display: none"> 
-    
-     <div class="col-md-12 mb-3" >
+    <div class="form-row"  id="pe-hide-4" style="display: none"> 
+        <div class="col-md-12 mb-3" >
              <label for="validationCustom04">Manufacturer's Declaration Cost</label>
             <div class="input-group">
-            <input id="ps-hide-2-value-1" type="number" class="form-control" placeholder="20">
+            <input id="pe-hide-value-4.1" type="number" class="form-control" placeholder="20">
             <div class="input-group-append">
             <span class="input-group-text">AUD</span>
             </div>
@@ -381,26 +470,24 @@
     </div>
        <hr>
       
-      
-       <div class="form-row">
+      <div class="form-row">
     <div class="col-md-12 mb-3">
             <div>
         <label for="chkPassport">
-            <p>Australian Certificate of Origin</p>
-        <input type="checkbox" id="ps-check-3" />Include Australian Certificate of Origin
+            <p>Australian Health Certificate</p>
+        <input type="checkbox" id="pe-check-5" />Include Australian Health Certificate
       
         </label>
             </div>
-            <label style="font-size: 80%" for="i1">Other Documentation (for example 'halal', 'organic' or 'award winning' claims).</label>
+            <label style="font-size: 80%" for="i1">An Australian Health Certificate must accompany all General Trade food product imports.</label>
         </div>
     </div>
     
-    <div class="form-row"  id="ps-hide-3" style="display: none"> 
-    
-     <div class="col-md-12 mb-3" >
-             <label for="validationCustom04">Australian Certificate of Origin Cost</label>
+    <div class="form-row"  id="pe-hide-5" style="display: none"> 
+        <div class="col-md-12 mb-3" >
+             <label for="validationCustom04">Australian Health Certificate Cost</label>
             <div class="input-group">
-            <input id="ps-hide-3-value-1" type="number" class="form-control" placeholder="30">
+            <input id="pe-hide-value-5.1" type="number" class="form-control" placeholder="30">
             <div class="input-group-append">
             <span class="input-group-text">AUD</span>
             </div>
@@ -409,8 +496,251 @@
         </div>
     </div>
        <hr>
+      
+      <!--      pe-check-6-->
+        <div class="form-row">
+    <div class="col-md-12 mb-3">
+            <div>
+        <label for="chkPassport">
+            <p>Australian Certificate of Origin</p>
+        <input type="checkbox" id="pe-check-6" />Include Australian Certificate of Origin
+      
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1"></label>
+        </div>
+    </div>
+    
+    <div class="form-row"  id="pe-hide-6" style="display: none"> 
+        <div class="col-md-12 mb-3" >
+             <label for="validationCustom04">Australian Certificate of Origin Cost</label>
+            <div class="input-group">
+            <input id="pe-hide-value-6.1" type="number" class="form-control" placeholder="30">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify your own cost or use the benchmark of $30 AUD</label>
+        </div>
+    </div>
+       <hr>
+      
+<!--      pe-check-7-->
+      <div class="form-row">
+    <div class="col-md-12 mb-3">
+            <div>
+        <label for="chkPassport">
+            <p>Other Documentation (for example 'halal', 'organic' or 'award winning' claims)</p>
+        <input type="checkbox" id="pe-check-7" />Include Other Documentation
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1">GACC requires any product label claim (such as 'halal', 'organic' or 'award winning') to be substantiated with supporting evidence and documentation. This is required to be provided during the label compliance process. Certain terms such as 'natural', and 'pure'can be very difficult to substaniate therefore may need to be omitted from the China label Use of the term órganic'requires additional certification of the production, processing and exporting enterprises.</label>
+        </div>
+    </div>
+    
+    <div class="form-row"  id="pe-hide-7" style="display: none"> 
+        <div class="col-md-6 mb-3" >
+             <label for="validationCustom04">Other Documentation</label>
+            <div class="form-group">
+            <textarea class="form-control" id="pe-hide-value-7.1" rows="3" placeholder="Specify which other documentation costs you have included."></textarea>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify which other documentation costs you have included.</label>
+        </div>
+          <div class="col-md-6 mb-3" >
+             <label for="validationCustom04">Other Documentation</label>
+             <label for="validationCustom04">Australian Certificate of Origin Cost</label>
+            <div class="input-group">
+            <input id="pe-hide-value-7.1" type="number" class="form-control" placeholder="No Bench Mark">
+            <div class="input-group-append">
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify your own cost.</label>
+        </div>
+    </div>
+       <hr>
+      
+      <!--      pe-check-8-->
+        <div class="form-row">
+    <div class="col-md-12 mb-3">
+            <div>
+        <label for="chkPassport">
+            <p>Palletisation</p>
+        <input type="checkbox" id="pe-check-8" />Include Palletisation
+
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1">Exporters should check pallet compliance. Wooden pallets must be rated export certified. Not required for plastic and cardboard pallets
+</label>
+        </div>
+    </div>
+    
+    <div class="form-row"  id="pe-hide-8" style="display: none"> 
+        <div class="col-md-6 mb-3" >
+             <label for="validationCustom04">Palletisation Cost
+            </label>
+            <div class="input-group">
+            <input id="pe-hide-value-8.1" type="number" class="form-control" placeholder="25">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify Pallet cost</label>
+        </div>
+        <div class="col-md-6 mb-3" >
+             <label for="validationCustom04">Palletisation Cost
+            </label>
+            <div class="input-group">
+            <input id="pe-hide-value-8.1" type="number" class="form-control" placeholder="100" readonly>
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1"></label>
+        </div>
+    </div>
+       <hr>
+      
+         <!--      pe-check-9-->
+        <div class="form-row">
+    <div class="col-md-12 mb-3">
+            <div>
+        <label for="chkPassport">
+            <p>Product Protection (including Shipment Tracking & Monitoring)</p>
+        <input type="checkbox" id="pe-check-9" />Include Product Protection
+
+        </label>
+            </div>
+            <label style="font-size: 80%" for="i1">Exporters and/or customers may want visibility of the product along the supply chain, particularly for high risk and temperature sensitive products. In addition GACC requires importers to ensure effective cold chain controls and temperature tracking in place for chilled food product imports
+</label>
+        </div>
+    </div>
+    
+    <div class="form-row"  id="pe-hide-9" style="display: none"> 
+        <div class="col-md-12 mb-3" >
+             <label for="">Product Protection, Shipment Tracking & Monitoring Cost
+            </label>
+            <div class="input-group">
+            <input id="pe-hide-value-9.1" type="number" class="form-control" placeholder="20">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify cost or use benchmark of $20</label>
+             
+             
+        </div>
+        
+    </div>
+      <div class="form-row"> 
+          <ul>
+            <li><label for="">Manufacturers Declaration References</label></li>
+
+            <li><label for="">Australian Reference?</label></li>
+
+            <li><label for="">Palletisation References</label></li>
+            <li><label for="">Insert relevant reference</label></li>
+            <li><label for="">Product Protection, Shipment Tracking & Monitoring References</label></li>
+            <li><label for="">Insert relevant reference</label></li>
+          </ul>
+      </div>
+       <hr>
+      
+<!--      PRE Shipment-->
+      <h2>PRE Shipment</h2>
+      <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <div>
+                <label for="ps-check-1">
+                    <p>Port Loading, Unloading, & Transfers</p>
+                <input type="checkbox" id="ps-check-1" />Include Port Loading, Unloading & Transfers
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-12 mb-3" id="ps-hide-1" style="display: none">
+             <label for="validationCustom04">Port Loading, Unloading & Transfers Cost</label>
+            <div class="input-group">
+            <input id="pe-hide-value-1" type="number" class="form-control" placeholder="No Benchmark">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify cost</label>
+        </div>
+      </div>
+      <hr>
+      
+<!--      ps-check-2-->
+      <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <div>
+                <label for="ps-check-2">
+                    <p>Shipment Storage & Handling Charges</p>
+                <input type="checkbox" id="ps-check-2" />Include Shipment Storage & Handling Charges
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-12 mb-3" id="ps-hide-2" style="display: none">
+             <label for="validationCustom04">Shipment Storage & Handling Charges Cost</label>
+            <div class="input-group">
+            <input id="pe-hide-value-1" type="number" class="form-control" placeholder="No Benchmark">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Specify cost</label>
+        </div>
+      </div>
+      <hr>
+      
+      <!--      ps-check-3-->
+      <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <div>
+                <label for="ps-check-3">
+                    <p>Include Shipping Rates</p>
+                <input type="checkbox" id="ps-check-3" />Include Shipping Rates
+                </label>
+            </div>
+                 <label style="font-size: 80%" for="i1">Shipping rates vary across transportation modes and services providers
+</label>
+            
+        </div>
+
+        <div class="col-md-12 mb-3" id="ps-hide-3" style="display: none">
+             <label for="validationCustom04">Shipping Rates Cost</label>
+            <div class="input-group">
+            <input id="pe-hide-value-1" type="number" class="form-control" placeholder="0">
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1">Enter shipping rates per kilo</label>
+       
+            <div>
+             <label for="validationCustom04">Shipping Rates Cost</label>
+            <div class="input-group">
+            <input id="pe-hide-value-1" type="number" class="form-control" placeholder="0" readonly>
+            <div class="input-group-append">
+            <span class="input-group-text">AUD</span>
+            </div>
+            </div>
+            <label style="font-size: 80%" for="i1"></label>
+            </div>
+        </div>
+      </div>
+      <hr>
+
+    
 
       
+      
+      
+      
+      
+      
+<!--
   <div class="form-group">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -422,6 +752,7 @@
       </div>
     </div>
   </div>
+-->
   <button class="btn btn-primary" type="submit">Submit form</button>
           
 
